@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -239,24 +241,56 @@ public class Main {
 
 
 
-//2*f Suraskite pirmą (mažiausią) indeksą, kurio elemento reikšmė didesnė už 10;
+//2*h Suraskite pirmą (mažiausią) indeksą, kurio elemento reikšmė didesnė už 10;
 
 
-        int[] Array = new int[30];
-        int[] min = new int[30];
-        int j = 0;
-        
-        
+//        int[] Array = new int[30];
+//        int[] min = new int[30];
+//        int j = 0;
+//
+//
+//
+//        for (int i = 0; i < 30; i++) {
+//            Array[i] = (int) (Math.random() * 20) + 5;
+//            System.out.println("elementas  " + i + " jo reiksme lygi  " + Array[i]);
+//            if (Array[i] > 23) {
+//                min[j] = i;
+//                System.out.println("maziausia indekso reiksme " + min[j]);
+//            }
+//        }
+//
+//3.* Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis
+//        200. Suskaičiuokite kiek yra kiekvienos raidės.
 
-        for (int i = 0; i < 30; i++) {
-            Array[i] = (int) (Math.random() * 20) + 5;
-            System.out.println("elementas  " + i + " jo reiksme lygi  " + Array[i]);
-            if (Array[i] > 24) {
-                min[j] = i;
-                j++;
-            }
-        }
-        System.out.println("maziausia indekso reiksme " + min[1]);
+
+//        Random random = new Random();
+//        String setOfCharacters = "ABCD";
+//        char[] Array = new char[200];
+//        int a=0;
+//        int b=0;
+//        int c=0;
+//        int d=0;
+//
+//        for (int i = 0; i < 200; i++) {
+//            int randomInt = random.nextInt(setOfCharacters.length());
+//            char randomChar = setOfCharacters.charAt(randomInt);
+//
+//            Array[i] = randomChar;
+//
+//            System.out.println("Random character from string: " + Array[i]);
+//
+//            if (Array[i] == 'A'){a++;}
+//            if (Array[i] == 'B'){b++;}
+//            if (Array[i] == 'C'){c++;}
+//            if (Array[i] == 'D'){d++;}
+//
+//        }
+//        System.out.println("A "+a+" B "+b+" C "+c+" D "+d);
+
+
+
+
+
 
 
 

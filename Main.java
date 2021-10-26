@@ -287,11 +287,37 @@ public class Main {
 //        }
 //        System.out.println("A "+a+" B "+b+" C "+c+" D "+d);
 
+///4* Išrūšiuokite 3 uždavinio masyvą pagal abecėlę.
 
+//        Random random = new Random();
+//        String setOfCharacters = "ABCD";
+//        char[] Array = new char[200];
+//
+//        for (int i = 0; i < 200; i++) {
+//            int randomInt = random.nextInt(setOfCharacters.length());
+//            char randomChar = setOfCharacters.charAt(randomInt);
+//
+//            Array[i] = randomChar;
+//
+//            System.out.println("Random character from string: " + Array[i]);
+//        }
+//
+//        for (int a = 0; 200 > a; a++) {
+//            for (int i = 0; 200 - 1 > i; i++)
+//                if (Array[i] > Array[i + 1]) {
+//                    char tmp = Array[i];
+//                    Array[i] = Array[i + 1];
+//                    Array[i + 1] = tmp;
+//                }
+//        }
+//
+//        for (int i = 0; i < 200; i++) {
+//            System.out.println("Surusiuotas " + Array[i]);
+//        }
 
-
-
-
+//5*. Sugeneruokite 3 masyvus pagal 3 uždavinio sąlygą. Sudėkite masyvus,
+//        sudėdami atitinkamas reikšmes. Paskaičiuokite kiek unikalių (po vieną,
+//                nesikartojančių) reikšmių ir kiek unikalių kombinacijų gavote.
 
 
 

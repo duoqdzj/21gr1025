@@ -318,11 +318,90 @@ public class Main {
 //5*. Sugeneruokite 3 masyvus pagal 3 uždavinio sąlygą. Sudėkite masyvus,
 //        sudėdami atitinkamas reikšmes. Paskaičiuokite kiek unikalių (po vieną,
 //                nesikartojančių) reikšmių ir kiek unikalių kombinacijų gavote.
+//
+//        Random random = new Random();
+//        String setOfCharacters = "ABCD";
+//        char[] Array = new char[200];
+//        char[] Array2 = new char[200];
+//        char[] Array3 = new char[200];
+//        String[] vienas = new String[200];
+//
+//        for (int i = 0; i < 200; i++) {
+//            // pirmas mastvas  is raidziu abcd
+//            int randomInt = random.nextInt(setOfCharacters.length());
+//            char randomChar = setOfCharacters.charAt(randomInt);
+//            Array[i] = randomChar;
+//            System.out.println("1Random character from string: " + Array[i]);
+//            // antras mastvas  is raidziu abcd
+//            int randomInt2 = random.nextInt(setOfCharacters.length());
+//            char randomChar2 = setOfCharacters.charAt(randomInt2);
+//            Array2[i] = randomChar2;
+//            System.out.println("2Random character from string: " + Array2[i]);
+//            // trecias mastvas  is raidziu abcd
+//            int randomInt3 = random.nextInt(setOfCharacters.length());
+//            char randomChar3 = setOfCharacters.charAt(randomInt3);
+//            Array3[i] = randomChar3;
+//            System.out.println("3Random character from string: " + Array3[i]);
+//        }
+//
+//        for (int i = 0; i < 200; i++) {
+//            //masyvus sujungiame i viena
+//            vienas[i]= String.valueOf(Array[i]) + String.valueOf(Array2[i]) + String.valueOf(Array3[i]);
+//
+////            System.out.print(" "+vienas[i]);
+//        }
+//
+//        for (int a = 0; 200 > a; a++) {
+//            for (int i = 0; 200 - 1 > i; i++)
+//                if (Array[i] > Array[i + 1]) {
+//                    String tmp = vienas[i];
+//                    vienas[i] = vienas[i + 1];
+//                    vienas[i + 1] = tmp;
+//                }
+//        }
+//
+//        for (int i = 0; i < 200; i++) {
+//
+//
+//            System.out.print(" "+vienas[i]);
+//        }
 
 
+//5* destytojo sprendinys:
 
 
+        String[] arr1 = new String[200];
+        String[] arr2 = new String[200];
+        String[] arr3 = new String[200];
+        String[] arrCombo = new String[200];
+        String[] letters = {"A","B","C","D"};
 
+        for (int i = 0; i < 200; i++) {
+            // grazina random elementa pagal indexa - genelu
+            arr1[i] = letters[ (int)(Math.random()*4)];
+            arr2[i] = letters[ (int)(Math.random()*4)];
+            arr3[i] = letters[ (int)(Math.random()*4)];
+            arrCombo[i] = arr1[i] + arr2[i] + arr3[i];
+        }
+
+        int countUniques = 0;
+        int tmpCount = 0;
+
+        for (int i = 0; i < arrCombo.length; i++) {
+            String tmpCombo = arrCombo[i];
+            //bubble rusiavimas
+            for (int a = i+1; a < arrCombo.length; a++) {
+                if (arrCombo[a].equals(tmpCombo)){
+                    tmpCount++;
+                }}
+                if (tmpCount == 0){
+                    countUniques++;
+                }
+                tmpCount = 0;
+
+
+        }
+        System.out.println("Unikaliu kombinaciju turime "+countUniques);
 
 
 
